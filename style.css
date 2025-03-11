@@ -1,35 +1,35 @@
-*{
+* {
     margin: 0px;
-        font-family: "inter";
+    font-family: "inter";
 }
 
-#logo{
+#logo {
     margin-left: 56px;
     margin-top: 52px;
 }
 
-#título-menusuperior{
+#título-menusuperior {
     margin-left: 172px;
     margin-top: 50px;
 }
 
-#texto-menusuperior{
-margin-top: 35px;
-margin-left: 172px;
-padding-bottom: 100px;
+#texto-menusuperior {
+    margin-top: 35px;
+    margin-left: 172px;
+    padding-bottom: 100px;
+    text-align: center;
 }
 
-#menusuperior{
+#menusuperior {
     background-image: url(imagens/fundo-menusuperior.svg);
     color: aliceblue;
 }
 
 #menuinformacional {
-  background-color: #EAECE5;
-  display: grid;
-  grid-auto-flow: column;
-  columns: auto;
-  
+    background-color: #EAECE5;
+    display: grid;
+    grid-auto-flow: column;
+    columns: auto;
 }
 
 .icones {
@@ -37,82 +37,79 @@ padding-bottom: 100px;
     padding: 25px;
 }
 
-.textoinformativo{
+.textoinformativo {
     display: flex;
     align-items: center;
 }
 
-#secaovideo{
+#secaovideo {
     display: grid;
     grid-auto-flow: column;
     columns: auto;
 }
 
-#titulovideo{
-    color:#247BA0;
+#titulovideo {
+    color: #247BA0;
     margin-top: 50px;
 }
 
-#video{
+#video {
     margin: 50px 25px 50px 100px;
 }
 
-#carrossel{
+#carrossel {
     background-color: #247BA0;
     padding: 70px;
 }
 
-#titulo-carrossel{
+#titulo-carrossel {
     color: white;
     text-align: center;
     font-size: 25px;
     padding: 25px;
 }
 
-#div-cards{
+#div-cards {
     margin-top: 25px;
-    display: grid;
-    grid-auto-flow: column;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.card{
-    margin-left: 50px;
-    
+.card {
+    margin: 10px;
 }
 
-#seta-esquerda{
+#seta-esquerda {
     display: none;
 }
 
-#Bruna{
+#Bruna {
     display: none;
 }
 
-.seta{
-    margin-top: 30%;
-    cursor: pointer;
-
+.seta {
+    display: none;
 }
 
-.seta:hover{
-    transform:translateY(-7px);
-    transition-duration: o.5s;
+.seta:hover {
+    transform: translateY(-7px);
+    transition-duration: 0.5s;
 }
 
-#formulario{
+#formulario {
     text-align: center;
 }
 
-#titulo-formulario{
+#titulo-formulario {
     color: #383838;
     font-size: 25px;
     margin: 25px;
 }
 
-input{
-    width:300px;
-    height:40px;
+input {
+    width: 300px;
+    height: 40px;
     background-color: #EAECE5;
     border: 0px;
     border-radius: 2px;
@@ -120,10 +117,10 @@ input{
     padding-left: 10px;
 }
 
-button{
+button {
     margin-bottom: 40px;
-    width:250px;
-    height:40px;
+    width: 250px;
+    height: 40px;
     font-size: 14px;
     color: #FFFFFF;
     background-color: #247BA0;
@@ -133,11 +130,180 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+button:hover {
     background-color: #318fb8;
-    color:white;
+    color: white;
     transform: translateY(-7px);
     box-shadow: 0px 15px 20px #05103081;
     transition-duration: 0.5s;
+}
+
+#secao-video {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Responsividade para telas menores que 768px */
+@media (max-width: 768px) {
+    #logo {
+        margin: 20px auto;
+        width: 80px;
+    }
+
+    #título-menusuperior, #texto-menusuperior {
+        margin: 20px auto;
+        padding-bottom: 50px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #menusuperior {
+        background-size: cover;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #menuinformacional {
+        grid-auto-flow: row;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .icones {
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .textoinformativo {
+        flex-direction: column;
+        text-align: center;
+        padding: 3rem;
+    }
+
+    #secaovideo {
+        grid-auto-flow: row;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #titulovideo {
+        margin: 10px auto;
+        position: relative;
+        top: 2.5rem;
+    }
+
+    #textovideo {
+        margin: 40px auto; /* Reduz a margem para encostar o texto no título */
+    }
+
+    #video {
+        margin: 20px auto;
+        width: 100%;
+    }
+
+    #carrossel {
+        padding: 50px;
+        text-align: center;
+    }
+
+    #div-cards {
+        grid-auto-flow: row;
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        margin: 10px;
+    }
+
+    .seta {
+        display: none;
+    }
+
+    #formulario {
+        padding: 10px;
+    }
+
+    input {
+        width: 90%;
+        height: 35px;
+    }
+
+    button {
+        width: 90%;
+        height: 35px;
+    }
+
+    #texto-depois-video {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* Responsividade para telas menores que 480px */
+@media (max-width: 480px) {
+    #logo {
+        margin: 10px auto;
+        width: 60px;
+    }
+
+    #título-menusuperior, #texto-menusuperior {
+        margin: 10px auto;
+        padding-bottom: 30px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .icones {
+        margin: 10px auto;
+        padding: 5px;
+    }
+
+    #titulovideo {
+        margin: 10px auto; /* Ajuste a margem para encostar o título no vídeo */
+    }
+
+    #textovideo {
+        margin: 5px auto; /* Reduz a margem para encostar o texto no título */
+    }
+
+    #video {
+        margin: 10px auto;
+        width: 100%;
+    }
+
+    #carrossel {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .card {
+        margin: 5px auto;
+        width: calc(33.33% - 10px); /* Ajuste para exibir três cards */
+    }
+
+    .seta {
+        display: none;
+    }
+
+    input {
+        width: 100%;
+        height: 30px;
+    }
+
+    button {
+        width: 100%;
+        height: 30px;
+    }
+
+    #texto-depois-video {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
